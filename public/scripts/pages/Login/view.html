@@ -1,0 +1,127 @@
+<div class="wrapper">
+    <form class="form-signin">       
+      <h2 class="form-signin-heading">Login</h2>
+      <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+      <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+      <div class="check_container">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+        </label>
+        <span>
+       <a href="#">Forgot Password? </a>
+        </span>
+      </div>
+      <span>
+      Not a member yet? <a href="#loginModal" data-toggle="modal" >Signup </a> Now It's free
+      </span>
+      <button class="btn btn-lg btn-primary btn-block submitButton" type="submit">Login</button>   
+    </form>
+  </div>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title text-center">Signup</h4>
+            </div>
+
+            <div class="modal-body">
+                <!-- The form is placed inside the body of modal -->
+                <form id="loginForm" name="loginForm" method="post" data-toggle="validator" ng-submit="submitForm(loginForm)" class="form-horizontal" novalidate>
+                    <div class="form-group"  ng-class="{'has-error':loginForm.username.$invalid }">
+                        <label class="col-xs-3 control-label">Username</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control" name="username" valid-username ng-model="username" placeholder="eg. akhilsahni" />
+                            <div class="help-inline">
+                                  <span ng-show="loginForm.username.$error.isBlank">Username Required.</span>
+                                  <span ng-show="loginForm.username.$error.invalidChars">Username must contain letters &amp; spaces only.</span>
+                                  <span ng-show="loginForm.username.$error.invalidLen">Username must be 5-20 characters.</span>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-xs-3 control-label">Gender</label>
+                      <div class="col-xs-6">
+                          <div class="radio">
+                              <label>
+                                  <input type="radio" name="gender" ng-model="gender" value="male" checked="checked" /> Male
+                              </label>
+                          </div>
+                          <div class="radio">
+                              <label>
+                                  <input type="radio" name="gender" ng-model="gender"  value="female" /> Female
+                              </label>
+                          </div>
+                          <div class="radio">
+                              <label>
+                                  <input type="radio" name="gender"ng-model="gender" value="other" /> Other
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+
+                    <div class="form-group" ng-class="{'has-error':loginForm.email.$invalid }">
+                        <label class="col-xs-3 control-label">Email</label>
+                        <div class="col-xs-5">
+                            <input type="email" class="form-control" valid-Email name="email" ng-model="email"  placeholder="eg. akhil.sahni@nagarro.com"/>
+                            <div class="help-inline">
+                                  <span ng-show="loginForm.email.$error.isBlank">Email id is Required.</span>
+                                  <span ng-show="loginForm.email.$error.invalidChars">Email id should be in the format abc@xyz.qwe</span>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="form-group" ng-class="{'has-error':loginForm.password.$invalid }">
+                        <label class="col-xs-3 control-label">Password</label>
+                        <div class="col-xs-5">
+                            <input type="password" valid-Password class="form-control" ng-model="password" name="password" />
+                            <div class="help-inline">
+                                <span ng-show="loginForm.password.$error.isBlank">Password Required.</span>
+                                <span ng-show="loginForm.password.$error.isWeak">Must contain one upper &amp; lower case letter and a non-letter (number or symbol.)</span> 
+                                <span ng-show="loginForm.password.$error.invalidLen">Must be 8-20 characters.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-actions" >
+                        <div class="col-xs-5 col-xs-offset-3">
+                            <button type="submit" class="btn  btn-primary " >Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="otpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title text-center">OTP Verification</h4>
+            </div>
+
+            <div class="modal-body">
+                <!-- The form is placed inside the body of modal -->
+                <form id="otpForm" name="otpForm" method="post" data-toggle="validator" ng-submit="submitOTPForm(otpForm)" class="form-horizontal" >
+                    <div class="form-group"  >
+                        <label class="col-xs-3 control-label">One Time Password</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control" name="otp"  ng-model="otp" placeholder="Please enter your One time password" />
+                        </div>
+                    </div>
+                    <div class="form-group form-actions" >
+                        <div class="col-xs-5 col-xs-offset-3">
+                            <button type="submit" class="btn  btn-primary " >Send</button>
+                        </div>
+                    </div>
+                 </form>   
+                   
+            </div>
+        </div>
+    </div>
+</div>

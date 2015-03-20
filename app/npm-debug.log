@@ -1,0 +1,92 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'bodyparser' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json IPLBid@0.1.0 No description
+6 warn package.json IPLBid@0.1.0 No repository field.
+7 warn package.json IPLBid@0.1.0 No README data
+8 warn package.json path@0.11.14 path is also the name of a node core module.
+9 verbose readDependencies using package.json deps
+10 verbose cache add [ 'bodyparser', null ]
+11 verbose cache add name=undefined spec="bodyparser" args=["bodyparser",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'bodyparser',
+12 verbose parsed url   path: 'bodyparser',
+12 verbose parsed url   href: 'bodyparser' }
+13 silly lockFile 981361c8-bodyparser bodyparser
+14 verbose lock bodyparser C:\Users\akhilsahni\AppData\Roaming\npm-cache\981361c8-bodyparser.lock
+15 silly lockFile 981361c8-bodyparser bodyparser
+16 silly lockFile 981361c8-bodyparser bodyparser
+17 verbose addNamed [ 'bodyparser', '' ]
+18 verbose addNamed [ null, '*' ]
+19 silly lockFile 6c35f799-bodyparser bodyparser@
+20 verbose lock bodyparser@ C:\Users\akhilsahni\AppData\Roaming\npm-cache\6c35f799-bodyparser.lock
+21 silly addNameRange { name: 'bodyparser', range: '*', hasData: false }
+22 verbose request where is /bodyparser
+23 verbose request registry https://registry.npmjs.org/
+24 verbose request id b43cb560c16093e8
+25 verbose url raw /bodyparser
+26 verbose url resolving [ 'https://registry.npmjs.org/', './bodyparser' ]
+27 verbose url resolved https://registry.npmjs.org/bodyparser
+28 verbose request where is https://registry.npmjs.org/bodyparser
+29 info trying registry request attempt 1 at 15:15:59
+30 http GET https://registry.npmjs.org/bodyparser
+31 http 404 https://registry.npmjs.org/bodyparser
+32 verbose headers { date: 'Wed, 18 Mar 2015 09:45:13 GMT',
+32 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+32 verbose headers   'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=0',
+32 verbose headers   'content-length': '51',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   age: '0',
+32 verbose headers   'x-served-by': 'cache-lhr6327-LHR',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1426671913.481822,VS0,VE165',
+32 verbose headers   'keep-alive': 'timeout=10, max=50',
+32 verbose headers   connection: 'Keep-Alive' }
+33 silly registry.get cb [ 404,
+33 silly registry.get   { date: 'Wed, 18 Mar 2015 09:45:13 GMT',
+33 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+33 silly registry.get     'content-type': 'application/json',
+33 silly registry.get     'cache-control': 'max-age=0',
+33 silly registry.get     'content-length': '51',
+33 silly registry.get     'accept-ranges': 'bytes',
+33 silly registry.get     via: '1.1 varnish',
+33 silly registry.get     age: '0',
+33 silly registry.get     'x-served-by': 'cache-lhr6327-LHR',
+33 silly registry.get     'x-cache': 'MISS',
+33 silly registry.get     'x-cache-hits': '0',
+33 silly registry.get     'x-timer': 'S1426671913.481822,VS0,VE165',
+33 silly registry.get     'keep-alive': 'timeout=10, max=50',
+33 silly registry.get     connection: 'Keep-Alive' } ]
+34 silly lockFile 6c35f799-bodyparser bodyparser@
+35 silly lockFile 6c35f799-bodyparser bodyparser@
+36 error 404 404 Not Found: bodyparser
+36 error 404
+36 error 404 'bodyparser' is not in the npm registry.
+36 error 404 You should bug the author to publish it
+36 error 404 It was specified as a dependency of 'IPLBid'
+36 error 404
+36 error 404 Note that you can also install from a
+36 error 404 tarball, folder, or http url, or git url.
+37 error System Windows_NT 6.1.7601
+38 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "bodyparser"
+39 error cwd E:\NTEG\IPLBidFinal\app
+40 error node -v v0.10.36
+41 error npm -v 1.4.28
+42 error code E404
+43 verbose exit [ 1, true ]
